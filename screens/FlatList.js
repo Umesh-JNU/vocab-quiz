@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, FlatList, Button } from "react-native";
+import { StyleSheet, Text, View, FlatList, Button, ScrollView } from "react-native";
 import React from "react";
 import Container from "../components/Container";
 
@@ -26,7 +26,9 @@ const FlatListComp = ({ navigation }) => {
       child={
         <>
           <Button title="Home" onPress={() => navigation.navigate("Home")} />
-          <View>
+          {/* For scroll use ScrollView component */}
+          {/* Avoid using FlatList inside ScrollView, instead use map method. */}
+          {/* <ScrollView> */}
             <Text style={{ fontSize: 40, fontWeight: 600 }}>FlatList</Text>
             <FlatList
               data={user}
@@ -35,7 +37,7 @@ const FlatListComp = ({ navigation }) => {
               )}
               keyExtractor={(item) => item.id}
             />
-          </View>
+          {/* </ScrollView> */}
         </>
       }
     />

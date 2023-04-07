@@ -7,7 +7,6 @@ import Title from "../components/Title";
 // to achieve this use navigation.navigate method like - navigation.navigate("Result", { score })
 const Result = ({ navigation, route }) => {
   const { score } = route.params;
-
   return (
     <Container
       child={

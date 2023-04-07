@@ -20,7 +20,7 @@ const InputName = () => {
       <TextInput
         style={styles.textInput}
         placeholder="Age"
-        keyboardType="search"
+        // keyboardType="search"
         onChangeText={(txt) => setUserName(txt)}
       />
     </View>
