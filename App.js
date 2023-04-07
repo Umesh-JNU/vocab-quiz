@@ -19,7 +19,7 @@ const App = () => {
     <NavigationContainer>
       {/* <NativeBaseProvider> */}
         <NavStack />
-      {/* </NativeBaseProvider> */}
+      {/* </SafeAreaView> */}
     </NavigationContainer>
   );
 };

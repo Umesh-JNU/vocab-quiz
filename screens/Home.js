@@ -39,6 +39,12 @@ const Home = ({ navigation }) => {
           >
             <Text style={styles.buttonText}>FormScreen</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("FlatList")}
+            style={styles.button}
+          >
+            <Text style={styles.buttonText}>FlatList</Text>
+          </TouchableOpacity>
         </>
       }
     />
